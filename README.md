@@ -4,41 +4,41 @@
 + [WSL 2](#WSL-2)
 + [Python](#Python)
 
-#### Windows 10
+### Windows 10
 
-#### WSL 2
+### WSL 2
 
-###### 1. PowerShell(관리자)
+##### 1. PowerShell(관리자)
 
 ```
 $ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-###### 2. 재부팅
+##### 2. 재부팅
 
-###### 3. 가상 머신 플랫폼 옵션 사용(PowerShell 관리지)
+##### 3. 가상 머신 플랫폼 옵션 사용(PowerShell 관리지)
 
 ```
 $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-###### 4. 리눅스 커널 업데이트 패키지
+##### 4. 리눅스 커널 업데이트 패키지
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
-###### 5. 재부팅
+##### 5. 재부팅
 
-###### 6. WSL2를 기본 버전으로 설정(PowerShell)
+##### 6. WSL2를 기본 버전으로 설정(PowerShell)
 
 ```
 $ wsl --set-default-version 2
 ```
 
-###### 7. 리눅스 배포판 설치(Microsoft 스토어)
+##### 7. 리눅스 배포판 설치(Microsoft 스토어)
 
 Ubuntu 20.04. LTS
 
-###### 8. Ubuntu 20.04. LTS
+##### 8. Ubuntu 20.04. LTS
 
 Enter new UNIX username, New password
 
@@ -46,7 +46,7 @@ Enter new UNIX username, New password
 $ sudo apt update && sudo apt upgrade
 ```
 
-###### 9. 배포 버전을 WSL2로 설정
+##### 9. 배포 버전을 WSL2로 설정
 
 ```
 $ wsl --list --verbose
@@ -55,20 +55,20 @@ $ wsl --list --verbose
 $ wsl --set-default-version 2
 ```
 
-###### 10. git
+##### 10. git
 
 ```
 $ git --version
 git version 2.25.1
 ```
 
-###### 11. VS Code
+##### 11. VS Code
 
 Windows에서 설치… →
 Extension: Remote-WSL, Remote-Containers, Docker →
 WSL에서… `$ code .`
 
-###### 12. Windows Terminal(Microsoft 스토어)
+##### 12. Windows Terminal(Microsoft 스토어)
 
 ```
 "defaults":
@@ -97,9 +97,9 @@ WSL에서… `$ code .`
         ]
 ```
 
-#### Python
+### Python
 
-###### 1. .venv
+##### 1. .venv
 
 ```
 $ python3 --version
@@ -120,11 +120,11 @@ $ source .venv/bin/activate
 (.venv) $ deactivate
 ```
 
-###### 2. VS Code에서 연동
+##### 2. VS Code에서 연동
 
 Crl + Shift + P... Python: Select Interpreter… Python 3.8.5 64-bit
 
-###### 3. VS Code에서 Python 테스트
+##### 3. VS Code에서 Python 테스트
 
 Extension: Python (ms-python.python) →
 print("Hello World") → Ctrl + F5
