@@ -64,8 +64,8 @@ git version 2.25.1
 
 #### 11. VS Code
 
-> Windows에서 설치…
-> Extension: Remote-WSL, Remote-Containers, Docker
+> Windows에서 설치… →
+> Extension: Remote-WSL, Remote-Containers, Docker →
 > WSL에서… `$ code .`
 
 #### 12. Windows Terminal(Microsoft 스토어)
@@ -126,5 +126,5 @@ $ source .venv/bin/activate
 
 #### 3. VS Code에서 Python 테스트
 
-> Extension: Python (ms-python.python)
+> Extension: Python (ms-python.python) →
 > print("Hello World") → Ctrl + F5
