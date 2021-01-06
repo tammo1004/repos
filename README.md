@@ -48,12 +48,12 @@ $ wsl --set-default-version 2
 
 #### 리눅스 배포판 설치(Microsoft 스토어)
 
-Ubuntu 20.04. LTS
+> Ubuntu 20.04. LTS
 
 #### Ubuntu 20.04. LTS
 
-Enter new UNIX username: pc
-New password:
+> Enter new UNIX username: pc
+> New password:
 
 ```
 $ sudo apt update && sudo apt upgrade
@@ -77,9 +77,9 @@ git version 2.25.1
 
 #### VS Code
 
-Windows에서 설치…
-Extension: Remote-WSL, Remote-Containers, Docker
-WSL에서… `$ code .`
+> Windows에서 설치…
+> Extension: Remote-WSL, Remote-Containers, Docker
+> WSL에서… `$ code .`
 
 #### Windows Terminal(Microsoft 스토어)
 
