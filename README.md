@@ -1,65 +1,52 @@
-## Windows 10
+# repos
 
-## WSL 2(Windows Subsystem for Linux 2)
-
-+ [PowerShell(관리자)](#PowerShell(관리자))
-+ [재부팅](#재부팅)
-+ [가상 머신 플랫폼 옵션 사용: PowerShell(관리지)](#가상-머신-플랫폼-옵션-사용(PowerShell-관리지))
-+ [리눅스 커널 업데이트 패키지](#리눅스-커널-업데이트-패키지)
-+ [재부팅](#재부팅)
-+ [WSL2를 기본 버전으로 설정: PowerShell](#WSL2를-기본-버전으로-설정(PowerShell))
-+ [리눅스 배포판 설치: Microsoft 스토어](#리눅스-배포판-설치(Microsoft-스토어))
-+ [Ubuntu 20.04. LTS](#Ubuntu-20.04.-LTS)
-+ [배포 버전을 WSL2로 설정](#배포-버전을-WSL2로-설정)
-+ [git](#git)
-+ [VS Code](#VS-Code)
-+ [Windows Terminal: Microsoft 스토어](#Windows-Terminal(Microsoft-스토어))
++ [Windows 10](#Windows-10)
++ [WSL 2(Windows Subsystem for Linux 2)](#WSL-2(Windows-Subsystem-for-Linux-2))
 + [Python](#Python)
 
 ## Windows 10
 
 ## WSL 2(Windows Subsystem for Linux 2)
 
-#### PowerShell(관리자)
+#### 1. PowerShell(관리자)
 
 ```
 $ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-#### 재부팅
+#### 2. 재부팅
 
-#### 가상 머신 플랫폼 옵션 사용(PowerShell 관리지)
+#### 3. 가상 머신 플랫폼 옵션 사용(PowerShell 관리지)
 
 ```
 $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-#### 리눅스 커널 업데이트 패키지
+#### 4. 리눅스 커널 업데이트 패키지
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
-#### 재부팅
+#### 5. 재부팅
 
-#### WSL2를 기본 버전으로 설정(PowerShell)
+#### 6. WSL2를 기본 버전으로 설정(PowerShell)
 
 ```
 $ wsl --set-default-version 2
 ```
 
-#### 리눅스 배포판 설치(Microsoft 스토어)
+#### 7. 리눅스 배포판 설치(Microsoft 스토어)
 
 > Ubuntu 20.04. LTS
 
-#### Ubuntu 20.04. LTS
+#### 8. Ubuntu 20.04. LTS
 
-> Enter new UNIX username: pc
-> New password:
+> Enter new UNIX username, New password
 
 ```
 $ sudo apt update && sudo apt upgrade
 ```
 
-#### 배포 버전을 WSL2로 설정
+#### 9. 배포 버전을 WSL2로 설정
 
 ```
 $ wsl --list --verbose
@@ -68,20 +55,20 @@ $ wsl --list --verbose
 $ wsl --set-default-version 2
 ```
 
-#### git
+#### 10. git
 
 ```
 $ git --version
 git version 2.25.1
 ```
 
-#### VS Code
+#### 11. VS Code
 
 > Windows에서 설치…
 > Extension: Remote-WSL, Remote-Containers, Docker
 > WSL에서… `$ code .`
 
-#### Windows Terminal(Microsoft 스토어)
+#### 12. Windows Terminal(Microsoft 스토어)
 
 ```
 "defaults":
@@ -110,7 +97,9 @@ git version 2.25.1
         ]
 ```
 
-#### Python
+## Python
+
+#### 1. .venv
 
 ```
 $ python3 --version
@@ -122,7 +111,7 @@ $ sudo apt install python3-pip
 $ sudo apt install python3-venv
 
 $ mkdir helloPython && cd helloPython
-/mnt/c/Users/pc/source/repos/helloPython$ python3 -m venv .venv
+$ python3 -m venv .venv
 $ source .venv/bin/activate
 (.venv) $ python -m pip install --upgrade pip
 (.venv) $ pip install pep8
@@ -131,9 +120,11 @@ $ source .venv/bin/activate
 (.venv) $ deactivate
 ```
 
-**VS Code에서 연동**
+#### 2. VS Code에서 연동
+
 > Crl + Shift + P... Python: Select Interpreter… Python 3.8.5 64-bit
 
-**VS Code에서 Python 테스트**
+#### 3. VS Code에서 Python 테스트
+
 > Extension: Python (ms-python.python)
 > print("Hello World") → Ctrl + F5
