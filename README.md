@@ -1,12 +1,12 @@
 # repos
 
 + [Windows 10](#Windows-10)
-+ [WSL 2(Windows Subsystem for Linux 2)](#WSL-2(Windows-Subsystem-for-Linux-2))
++ [WSL 2](#WSL-2)
 + [Python](#Python)
 
 ## Windows 10
 
-## WSL 2(Windows Subsystem for Linux 2)
+## WSL 2
 
 #### 1. PowerShell(관리자)
 
