@@ -36,11 +36,11 @@ $ wsl --set-default-version 2
 
 ###### 7. 리눅스 배포판 설치(Microsoft 스토어)
 
-> Ubuntu 20.04. LTS
+Ubuntu 20.04. LTS
 
 ###### 8. Ubuntu 20.04. LTS
 
-> Enter new UNIX username, New password
+Enter new UNIX username, New password
 
 ```
 $ sudo apt update && sudo apt upgrade
@@ -64,9 +64,9 @@ git version 2.25.1
 
 ###### 11. VS Code
 
-> Windows에서 설치… →
-> Extension: Remote-WSL, Remote-Containers, Docker →
-> WSL에서… `$ code .`
+Windows에서 설치… →
+Extension: Remote-WSL, Remote-Containers, Docker →
+WSL에서… `$ code .`
 
 ###### 12. Windows Terminal(Microsoft 스토어)
 
@@ -122,9 +122,9 @@ $ source .venv/bin/activate
 
 ###### 2. VS Code에서 연동
 
-> Crl + Shift + P... Python: Select Interpreter… Python 3.8.5 64-bit
+Crl + Shift + P... Python: Select Interpreter… Python 3.8.5 64-bit
 
 ###### 3. VS Code에서 Python 테스트
 
-> Extension: Python (ms-python.python) →
-> print("Hello World") → Ctrl + F5
+Extension: Python (ms-python.python) →
+print("Hello World") → Ctrl + F5
