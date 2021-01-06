@@ -77,9 +77,7 @@ git version 2.25.1
 
 #### VS Code
 
-Windows에서 설치…
-Extension: Remote-WSL, Remote-Containers, Docker
-WSL에서… $ code .
+Windows에서 설치… - Extension: Remote-WSL, Remote-Containers, Docker - WSL에서… $ code .
 
 #### Windows Terminal(Microsoft 스토어)
 
